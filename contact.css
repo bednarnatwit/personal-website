@@ -9,6 +9,7 @@ body {
     background: url(wit_background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .header {

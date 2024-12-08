@@ -201,10 +201,6 @@ body {
     padding-bottom: 20px;
 }
 
-.footer span a {
-    text-decoration: underline;
-    color: #3d38c7;
-}
 .footer2{
     display: none;
 }
@@ -242,11 +238,14 @@ body {
         justify-content: center;
         align-items: center;
         color: black;
-        background: #ffc70b;
+        background: white;
         font-weight: 400;
         font-size: 13px;
         padding-top: 20px;
         padding-bottom: 20px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+        border-bottom: solid 5px #ffc70b;
+        border-top: solid 5px #ffc70b;
     }
     .content h3 {
         font-size: 20px;
