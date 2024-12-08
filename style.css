@@ -151,7 +151,7 @@ body {
         background-size: cover;
         background-position: 35%;
         min-height: 100vh;
-        overflow-y: hidden;
+        overflow: hidden;
     }
     .home_content {
         position: absolute;
@@ -161,6 +161,7 @@ body {
         width: 100%;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
     .sub_content {
         width: 100%;
