@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(wit_background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 50px;
+    background: #ffc70b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    transition: all .2s;
+}
+.logo:hover {
+    transform: scale(1.25);
+}
+.navbar {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+    position: absolute;
+}
+.navbar a{
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    color: black;
+    padding: 20px 50px;
+    text-decoration: none;
+    display: flex;
+    transition: all .2s ease;
+    width: 100%;
+}
+.navbar a:hover {
+    transform: scale(1.01);
+    background: #ffc70b;
+}
+
+
+.navbar a.icon {
+    display: flex;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.menu img {
+    height: 25px;
+    transition: all .2s ease;
+}
+.menu img:hover {
+    transform: scale(1.25);
+}
+
+.body_container {
+    position: relative;
+    display: flex;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 100%;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.body_header {
+    font-family: "Didact Gothic", sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.section1 h1 {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    border-bottom: solid 5px #ffc70b;
+    padding-bottom: 20px;
+}
+
+.section1 h2 {
+    font-weight: 400;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.section1 h2 a {
+    text-decoration: none;
+    color: #3d38c7;
+    transition: all .2s;
+}
+.section1 h2 a:hover {
+    color: #ffc70b;
+}
+.copy-container {
+    position: relative;
+}
+  
+.copy-message {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: none; /* Hidden initially */
+    transform: translate(-50%, -500%); /* Adjust positioning around cursor */
+    pointer-events: none; /* Ensure it doesn’t interfere with clicks */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.copy-text {
+    transition: all .2s;
+}
+
+.copy-text:hover {
+    cursor: pointer;
+    color: #3d38c7;
+}
+
+
+@media only screen and (max-width: 1170px) {
+    .navbar a{
+        font-size: 13px;
+        padding: 10px 50px;
+    }
+    .body_container {
+        top: 35%;
+        position: fixed;
+    }
+    .body_header {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .section1 h1 {
+        font-size: 25px;
+    }
+
+    .section1 h2 {
+        font-size: 13px;
+    }
+    .copy-message {
+        transform: translate(-50%, -1300%);
+        font-size: 0.7rem;
+    }
+}

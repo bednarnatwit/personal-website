@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Bednar - Contact</title>
+    <link rel="icon" type="image/x-icon" href="calculator-simple.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="logo">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="menu"><img src="menu-burger.png" alt="menu"></i>
+        </a>
+    </header>
+    <div class="navbar" id="myLinks">
+        <a href="about.html" class="border_item">About</a>
+        <a href="research.html" class="border_item">Research</a>
+        <a href="projects.html" class="border_item">Projects</a>
+    </div>
+    <div class="body_container">
+        <div class="body_header">
+            <div class="section1">
+                <h1>Contact Information</h1>
+                <h2>Personal Email - <span class="copy-text" onclick="copyText(event, this)">nbednar12@gmail.com</span></h2>
+                <h2>School Email - <span class="copy-text" onclick="copyText(event, this)">bednarn@wit.edu</span></h2>
+                <h2>Current University - Wentworth Institute of Technology</h2>
+                <h2>(550 Huntington Ave - Boston, MA 02115)</h2>
+                <h2>LinkedIn - <a href="https://linkedin.com/in/nathan-bednar-190ba426b" target="_blank">Profile</a></h2>
+                <h2>GitHub - <a href="https://github.com/bednarnatwit" target="_blank">Profile</a></h2>
+                <div class="copy-message" id="copy-message">Copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

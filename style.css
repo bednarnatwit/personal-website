@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(background\ 3.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    background: #ffc70b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    transition: all .2s;
+}
+.icon {
+    display: none;
+}
+.navbar2 a.icon {
+    display: none;
+}
+.navbar2 {
+    display: none;
+}
+.navbar {
+    display: flex;
+}
+.navbar a{
+    position: relative;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+    transition: all .2s ease;
+}
+.navbar a:hover {
+    transform: scale(1.25);
+}
+
+.home_content {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.sub_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px 50px;
+    background: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.phrase1 {
+    position: relative;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.math {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    color: #3d38c7;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.phrase2 {
+    position: relative;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+}
+
+.links a {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.links a img {
+    width: 35px;
+    transition: all .2s ease;
+}
+.links a img:hover {
+    transform: scale(1.25);
+}
+
+@media only screen and (max-width: 930px) {
+    .logo {
+        font-size: 25px;
+    }
+    .navbar a {
+        font-size: 10px;
+    }
+    .phrase1 {
+        font-size: 25px;
+    }
+    .math {
+        font-size: 25px;
+    }
+    .phrase2 {
+        font-size: 13px;
+    }
+    body {
+        background-position: 30%;
+    }
+    .home_content {
+        top: 35%;
+        position: fixed;
+        
+    }
+    .sub_content {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar2 {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+        position: absolute;
+    }
+    .navbar2 a{
+        font-family: "Didact Gothic", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        font-style: normal;
+        color: black;
+        padding: 10px 50px;
+        text-decoration: none;
+        display: flex;
+        transition: all .2s ease;
+        width: 100%;
+    }
+    .navbar2 a:hover {
+        transform: scale(1.01);
+        background: #ffc70b;
+    }
+    
+    .icon {
+        display: flex;
+    }
+    
+    .navbar2 a.icon {
+        display: flex;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    
+    .menu img {
+        height: 25px;
+        transition: all .2s ease;
+    }
+    .menu img:hover {
+        transform: scale(1.25);
+    }
+    .header {
+        position: relative;
+    }
+}
+
+
