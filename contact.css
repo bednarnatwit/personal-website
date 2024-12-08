@@ -38,6 +38,7 @@ body {
 }
 .logo:hover {
     transform: scale(1.25);
+    color: white;
 }
 .navbar {
     display: none;
@@ -64,7 +65,7 @@ body {
 }
 .navbar a:hover {
     transform: scale(1.01);
-    background: #ffc70b;
+    background: #ffd95a;
 }
 
 
@@ -86,8 +87,7 @@ body {
 .body_container {
     position: relative;
     display: flex;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    min-height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: baseline;
@@ -175,7 +175,6 @@ body {
         padding: 10px 50px;
     }
     .body_container {
-        top: 35%;
         position: fixed;
     }
     .body_header {

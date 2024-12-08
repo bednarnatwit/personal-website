@@ -34,6 +34,7 @@ body {
 }
 .logo:hover {
     transform: scale(1.25);
+    color: white;
 }
 .navbar {
     display: none;
@@ -60,7 +61,7 @@ body {
 }
 .navbar a:hover {
     transform: scale(1.01);
-    background: #ffc70b;
+    background: #ffd95a;
 }
 
 
@@ -163,18 +164,20 @@ body {
 
 .footer {
     display: flex;
-    font-family: "Didact Gothic", sans-serif;
     width: 100%;
     justify-content: center;
     align-items: center;
     color: black;
     background: #ffc70b;
-    font-weight: 400;
-    font-size: 18px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+.footer h4 {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Didact Gothic", sans-serif;
+}
 .footer span a {
     text-decoration: none;
     color: #3d38c7;
@@ -221,19 +224,20 @@ body {
     }
     .footer2 {
         display: flex;
-        font-family: "Didact Gothic", sans-serif;
         width: 100%;
         justify-content: center;
         align-items: center;
         color: black;
-        background: white;
-        font-weight: 400;
-        font-size: 13px;
+        background: #ffc70b;
         padding-top: 20px;
         padding-bottom: 20px;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
-        border-bottom: solid 5px #ffc70b;
-        border-top: solid 5px #ffc70b;
+    }
+    .footer2 h4 {
+        font-family: "Didact Gothic", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        font-family: "Didact Gothic", sans-serif;
     }
     .footer2 span a {
         text-decoration: none;
@@ -241,7 +245,7 @@ body {
         transition: all .2s;
     }
     .footer2 span a:hover {
-        color: #ffc70b;
+        color: white;
     }
     .content h3 {
         font-size: 20px;

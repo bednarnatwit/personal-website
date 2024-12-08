@@ -59,6 +59,7 @@ body {
 }
 .navbar a:hover {
     transform: scale(1.25);
+    color: white;
 }
 
 .home_content {
@@ -197,7 +198,7 @@ body {
     }
     .navbar2 a:hover {
         transform: scale(1.01);
-        background: #ffc70b;
+        background: #ffd95a;
     }
     
     .icon {
